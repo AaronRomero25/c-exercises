@@ -13,20 +13,26 @@
 // variable to track the minimum.
 int min_of_two(int a, int b) {
     // TODO: replace this placeholder return with the correct logic.
-    return 0;
+    if(a<b){
+        return a;
+    }
+    else return b;
+    
 }
 
 int main(void) {
     int first = 0;
     int second = 0;
 
-    printf("Enter first integer: ");
+    printf("Enter first integer: \n");
     scanf("%d", &first);
 
-    printf("Enter second integer: ");
+    printf("Enter second integer: \n");
     scanf("%d", &second);
 
     // TODO: call min_of_two and print the result to the screen.
+    int smallest = min_of_two(first, second);
 
+    printf(" The smaller number is %d\n", smallest);
     return 0;
 }

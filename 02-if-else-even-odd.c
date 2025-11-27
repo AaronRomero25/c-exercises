@@ -16,10 +16,18 @@
 int main(void) {
     int number = 0;
 
-    printf("Enter an integer: ");
+    printf("Enter an integer: \n");
     scanf("%d", &number);
-
+    int remainder = number % 2;
     // Add your if/else statements here to print the correct message.
-
+    if (number == 0){
+        printf("The number is Zero\n");
+    }
+    else if (remainder==0){
+        printf("The number is even\n");
+    }
+    else{
+        printf("The number is odd\n");
+    }
     return 0;
 }
