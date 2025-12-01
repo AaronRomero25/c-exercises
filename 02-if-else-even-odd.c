@@ -24,10 +24,10 @@ int main(void) {
         printf("The number is Zero\n");
     }
     else if (remainder==0){
-        printf("The number is even\n");
+        printf("The number %d is even\n", number);
     }
     else{
-        printf("The number is odd\n");
+        printf("The number %d is odd\n", number);
     }
     return 0;
 }
